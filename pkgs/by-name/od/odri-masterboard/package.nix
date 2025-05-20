@@ -6,8 +6,8 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "odri";
-  version = "1.0.1";
+  pname = "odri-masterboard";
+  version = "1.0.7";
 
   src = fetchgit {
     url = "https://github.com/open-dynamic-robot-initiative/master-board";

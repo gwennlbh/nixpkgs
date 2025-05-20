@@ -8,7 +8,7 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "odri";
+  pname = "odri-control";
   version = "1.0.1";
 
   src = fetchgit {
