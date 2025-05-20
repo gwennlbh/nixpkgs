@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
     #url = "https://github.com/open-dynamic-robot-initiative/master-board";
     url = "https://github.com/gwennlbh/master-board";
     # repo = "odri_control_interface";
-    rev =version;
+    rev = version;
     # sha256 = "sha256-jeZFgAW8C+UCeW+TtV1fNJZR7yuWcpiQnepsbkNanPg=";
     hash = "sha256-3vx3bOQkFnZXZ4jSh89Se7T8t6VpfL+JV3sVHz8+X78=";
     sparseCheckout = [
@@ -26,5 +26,9 @@ stdenv.mkDerivation rec {
 
   sourceRoot = "${src.name}/sdk/master_board_sdk";
 
-  nativeBuildInputs = [ cmake python312 python312Packages.boost ];
+  nativeBuildInputs = [
+    cmake
+    python312
+    python312Packages.boost
+  ];
 }
