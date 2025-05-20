@@ -3,8 +3,6 @@
   fetchgit,
   stdenv,
   cmake,
-  yaml-cpp,
-  eigen,
 }:
 
 stdenv.mkDerivation rec {
@@ -23,11 +21,9 @@ stdenv.mkDerivation rec {
     fetchSubmodules = true;
   };
 
-  prePatch = ''
-    cd sdk/master_board_sdk
-  '';
+  sourceRoot = "${src.name}/sdk/master_board_sdk";
 
-  nativeBuildInputs = [ cmake yaml-cpp eigen ];
+  nativeBuildInputs = [ cmake ];
 }
 
 
