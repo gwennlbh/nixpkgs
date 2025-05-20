@@ -20,8 +20,9 @@ stdenv.mkDerivation rec {
     fetchSubmodules = true;
   };
 
-
-  nativeBuildInputs = [ cmake yaml-cpp eigen ];
+  nativeBuildInputs = [
+    cmake
+    yaml-cpp
+    eigen
+  ];
 }
-
-
