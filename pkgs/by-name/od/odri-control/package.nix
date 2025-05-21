@@ -5,7 +5,7 @@
   cmake,
   yaml-cpp,
   eigen,
-  odri-masterboard,
+  odri-masterboard-sdk,
   python312,
   python312Packages,
 }:
@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     cmake
     yaml-cpp
     eigen
-    odri-masterboard
+    odri-masterboard-sdk
     python312Packages.eigenpy
     python312Packages.boost
     python312

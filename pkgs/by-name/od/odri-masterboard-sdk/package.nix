@@ -8,7 +8,7 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "odri-masterboard";
+  pname = "odri-masterboard-sdk";
   version = "9388c843e569d5bd3cd836f442ddfef43c8a7528";
 
   src = fetchgit {
